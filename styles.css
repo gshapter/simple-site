@@ -55,4 +55,8 @@ img {
   body {
     background: tomato;
   }
+  .text-container {
+    left: 15%;
+    top: 20%;
+  }
 }
