@@ -7,6 +7,11 @@ body {
   font-weight: 500;
 }
 
+body::selection {
+  color: #1D2121;
+  background-color: #FE684D;
+}
+
 h1 {
   font-size:  clamp(10px, 10vw, 300px);
   font-weight: 600;
