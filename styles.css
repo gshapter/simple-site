@@ -47,3 +47,12 @@ h1 {
     margin-top: 32px;
   }
 }
+
+.papier-link {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.papier-link:hover {
+  text-decoration-style: wavy;
+}
