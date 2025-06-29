@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     requestAnimationFrame(() => {
       span.style.opacity = '0';
-      span.style.top = (mouseY - 50) + 'px';
+      span.style.top = (mouseY - 80) + 'px';
       span.style.transform = `translate(-50%, -50%) rotate(${rotate}deg) scale(0.5)`;
     });
 
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
     mouseX = e.clientX;
     mouseY = e.clientY;
     createParticle();
-    intervalId = setInterval(createParticle, 1000);
+    intervalId = setInterval(createParticle, 500);
   });
 
   papier.addEventListener('mouseleave', () => {
