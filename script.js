@@ -20,6 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
     span.style.transform = `translate(-50%, -50%) rotate(${rotate}deg) scale(1)`;
     document.body.appendChild(span);
 
+
     const dx = (Math.random() - 0.5) * 20; // random horizontal shift
 
     requestAnimationFrame(() => {
