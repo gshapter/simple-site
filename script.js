@@ -15,7 +15,6 @@ document.addEventListener('DOMContentLoaded', function () {
     let mouseX = 0;
     let mouseY = 0;
     let timeoutId = null;
-    const randomDelay = () => 300 + Math.random() * 300; // 300ms to 600ms
     const randomDelay = () => 200 + Math.random() * 200; // 300ms to 600ms
     const createParticle = () => {
       const startX = mouseX;
