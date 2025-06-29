@@ -61,3 +61,12 @@ h1 {
 .papier-link:hover {
   text-decoration-style: wavy;
 }
+
+.emoji-confetti {
+  position: absolute;
+  pointer-events: none;
+  font-size: 30px;
+  opacity: 1;
+  transform: translate(-50%, -50%);
+  transition: top 1s ease-out, left 1s ease-out, transform 1s ease-out, opacity 1s ease-out;
+}
