@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
       span.style.top = startY + 'px';
       const rotate = Math.random() * 60 - 30; // random rotation between -30 and 30
       span.style.transform = `translate(-50%, -50%) rotate(${rotate}deg) scale(0.3)`;
-      span.style.transition = 'transform 0.05s ease-in';
+      span.style.transition = 'transform 0.05s ease-in-out';
       document.body.appendChild(span);
 
       const dx = (Math.random() - 0.5) * 50; // random horizontal shift
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
         span.style.top = (startY - 80) + 'px';
         span.style.left = (startX + dx) + 'px';
         span.style.transform = `translate(-50%, -50%) rotate(${rotate}deg) scale(0.5)`;
-      }, 200);
+      }, 100);
 
       setTimeout(() => span.remove(), 1200);
     };
