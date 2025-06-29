@@ -9,15 +9,14 @@ document.addEventListener('DOMContentLoaded', function () {
   const instagramParagraph = document.querySelector('.history-instagram');
   const consultancyParagraph = document.querySelector('.history-consultancy');
 
+
   const setupConfetti = (target, emoji) => {
     if (!target) return;
-
     let mouseX = 0;
     let mouseY = 0;
     let timeoutId = null;
-
     const randomDelay = () => 300 + Math.random() * 300; // 300ms to 600ms
-
+    const randomDelay = () => 200 + Math.random() * 200; // 300ms to 600ms
     const createParticle = () => {
       const startX = mouseX;
       const startY = mouseY;
@@ -31,16 +30,16 @@ document.addEventListener('DOMContentLoaded', function () {
       span.style.transition = 'transform 0.2s ease-out';
       document.body.appendChild(span);
 
-      const dx = (Math.random() - 0.5) * 20; // random horizontal shift
+      const dx = (Math.random() - 0.5) * 50; // random horizontal shift
 
       requestAnimationFrame(() => {
         span.style.transform = `translate(-50%, -50%) rotate(${rotate}deg) scale(1)`;
       });
-
-      setTimeout(() => {
+      
+ setTimeout(() => {
         span.style.transition = 'top 1s ease-out, left 1s ease-out, transform 1s ease-out, opacity 1s ease-out';
         span.style.opacity = '0';
-        span.style.top = (startY - 50) + 'px';
+        span.style.top = (startY - 80) + 'px';
         span.style.left = (startX + dx) + 'px';
         span.style.transform = `translate(-50%, -50%) rotate(${rotate}deg) scale(0.5)`;
       }, 200);
