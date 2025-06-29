@@ -68,5 +68,5 @@ h1 {
   font-size: 30px;
   opacity: 1;
   transform: translate(-50%, -50%);
-  transition: top 1s ease-out, transform 1s ease-out, opacity 1s ease-out;
+  transition: top 1s ease-out, left 1s ease-out, transform 1s ease-out, opacity 1s ease-out;
 }
