@@ -1,4 +1,10 @@
 document.addEventListener('DOMContentLoaded', function () {
+  const isTouchDevice =
+    'ontouchstart' in window || navigator.maxTouchPoints > 0;
+  if (isTouchDevice) {
+    return; // disable confetti on touch screens
+  }
+
   const papierParagraph = document.querySelector('.history-papier');
   const instagramParagraph = document.querySelector('.history-instagram');
   const consultancyParagraph = document.querySelector('.history-consultancy');
