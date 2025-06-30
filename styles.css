@@ -31,7 +31,7 @@ h1 {
 body.sauce-font h1 {
   font-family: 'sauce_tm', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   font-feature-settings: "ss02";
-  font-size: 16vw;
+  font-size: 14vw;
   line-height: 80%;
   font-weight: 300;
 }
