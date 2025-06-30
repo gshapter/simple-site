@@ -25,6 +25,7 @@ h1 {
   font-weight: 600;
   line-height: 1;
   margin: 0;
+  cursor: pointer;
 }
 
 body.sauce-font h1 {
