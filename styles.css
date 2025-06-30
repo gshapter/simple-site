@@ -42,6 +42,10 @@ body.sauce-font h1 {
   margin: 24px 0 0;
 }
 
+body.sauce-font .intro {
+  margin: 0;
+}
+
 .history {
   position: absolute;
   bottom: 24px;
