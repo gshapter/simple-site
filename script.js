@@ -1,6 +1,11 @@
 document.addEventListener('DOMContentLoaded', function () {
   const isTouchDevice =
     'ontouchstart' in window || navigator.maxTouchPoints > 0;
+
+  document.body.addEventListener('click', () => {
+    document.body.classList.toggle('sauce-font');
+  });
+
   if (isTouchDevice) {
     return; // disable confetti on touch screens
   }

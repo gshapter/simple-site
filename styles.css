@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'sauce_tm';
+  src: url('sauce_tm-webfont.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   background: #1D2121;
   color: #E7DBC5;
@@ -17,6 +24,10 @@ h1 {
   font-weight: 600;
   line-height: 1;
   margin: 0;
+}
+
+body.sauce-font h1 {
+  font-family: 'sauce_tm', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
 .intro {
