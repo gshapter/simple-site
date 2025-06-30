@@ -67,6 +67,12 @@ body.sauce-font h1 {
     flex-direction: column;
     gap: 16px;
     margin-top: 32px;
+  } 
+  /* Increase readability of paragraph text on small screens */
+  p,
+  .intro,
+  .history p {
+    font-size: 18px;
   }
 }
 
