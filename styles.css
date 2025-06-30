@@ -15,6 +15,16 @@ body {
   font-weight: 500;
 }
 
+body.sauce-font {
+  background: #FE684D;
+  color: #FFDFA7;
+}
+
+body.sauce-font::selection {
+  background: #1D2121;
+  color: #FE684D;
+}
+
 body::selection {
   color: #1D2121;
   background-color: #FE684D;
